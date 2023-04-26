@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class E4 {
 
-static String[] caracter = new String = {A, B, C, D, E, F, G, H, I, J, K, L, N, M, O, P, Q, R, S, T, U, V, W, X, Y, Z}
+static String[] caracter = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "N", "M", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
 static String digito;
 static boolean acertou = false;
 
