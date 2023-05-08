@@ -17,7 +17,6 @@ public class E5 {
     }
 
     static int verificacao(int dado1, int dado2, int resultado) {
-        int soma;
         int ponto = 0;
         boolean acabou = false;
         Random rand = new Random();
@@ -28,16 +27,16 @@ public class E5 {
             System.out.println("você perdeu");
         } else {
             ponto = dado1 + dado2;
-        }
-        while (acabou == false) {
-            dado1 = rand.nextInt(6);
-            dado2 = rand.nextInt(6);
-            if (dado1 + dado2 == ponto) {
-                System.out.println("você ganhou");
-                acabou = true;
-            } else if (dado1 + dado2 == 7) {
-                System.out.println("você perdeu");
-                acabou = true;
+            while (acabou == false) {
+                dado1 = rand.nextInt(6);
+                dado2 = rand.nextInt(6);
+                if (dado1 + dado2 == ponto) {
+                    System.out.println("você ganhou");
+                    acabou = true;
+                } else if (dado1 + dado2 == 7) {
+                    System.out.println("você perdeu");
+                    acabou = true;
+                }
             }
         }
         return resultado;
