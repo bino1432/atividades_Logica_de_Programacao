@@ -18,5 +18,6 @@ public class array3 {
 		for(int num : array) {
 			System.out.print(num + " ");
 		}
+		leia.close();
 	}
 }

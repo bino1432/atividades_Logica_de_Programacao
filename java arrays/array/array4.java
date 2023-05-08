@@ -1,5 +1,4 @@
 package array;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class array4 {
@@ -19,15 +18,15 @@ public class array4 {
 		
 		for(int contador = 0; contador <= 9; contador++) {
 			if(array[contador] > valorref) {
-				System.out.println(array[contador]+" é maior que o numero de referencia");
+				System.out.println(array[contador]+" ï¿½ maior que o numero de referencia");
 			}else if(array[contador] < valorref){
 				menor++;
 			}else {
 				igual++;
 			}
 		}
-		System.out.println("a quantidade de numeros menores é de: "+menor);
-		System.out.println("a quantidade de numeros iguais é de: "+igual);
+		System.out.println("a quantidade de numeros menores ï¿½ de: "+menor);
+		System.out.println("a quantidade de numeros iguais ï¿½ de: "+igual);
 
 		leia.close();
 	}
