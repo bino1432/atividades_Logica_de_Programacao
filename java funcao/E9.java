@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class E7 {
+public class E9 {
 
     public static void main(String[] args) {
       Scanner ler = new Scanner(System.in);
@@ -38,18 +38,17 @@ public class E7 {
         }
         System.out.printf("*\n");
       }
-      System.out.printf("*"); linha('*', (2*n)+1); System.out.printf("*\n");
+      System.out.printf("*"); linha('=', (2*n)+1); System.out.printf("*\n");
       for (i=n; i>=1; i--) {
         System.out.printf("* ");
-        for (j=1; j<=i; j++) {
-          System.out.printf("%d ", i);
-        }
         for (j=1; j<=(n-i); j++) {
           System.out.printf("  ");
         }
+        for (j=1; j<=i; j++) {
+          System.out.printf("%d ", i);
+        }
         System.out.printf("*\n");
       }
-
       System.out.printf("*"); linha('=', (2*n)+1); System.out.printf("*");
     }
 

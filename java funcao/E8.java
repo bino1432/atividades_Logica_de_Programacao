@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class E7 {
+public class E8 {
 
     public static void main(String[] args) {
       Scanner ler = new Scanner(System.in);
@@ -27,8 +28,8 @@ public class E7 {
 
     public static void figura(int n) {
       int i, j;
-      System.out.printf("*"); linha('=', (2*n)+1); System.out.printf("*\n");
-      for (i=1; i<=n; i++) {
+      System.out.printf("*"); linha('=', (4*n)+3); System.out.printf("*\n");
+      for (i=n; i>=0; i--) {
         System.out.printf("* ");
         for (j=1; j<=(n-i); j++) {
           System.out.printf("  ");
@@ -36,10 +37,6 @@ public class E7 {
         for (j=1; j<=i; j++) {
           System.out.printf("%d ", i);
         }
-        System.out.printf("*\n");
-      }
-      System.out.printf("*"); linha('*', (2*n)+1); System.out.printf("*\n");
-      for (i=n; i>=1; i--) {
         System.out.printf("* ");
         for (j=1; j<=i; j++) {
           System.out.printf("%d ", i);
@@ -49,8 +46,7 @@ public class E7 {
         }
         System.out.printf("*\n");
       }
-
-      System.out.printf("*"); linha('=', (2*n)+1); System.out.printf("*");
+      System.out.printf("*"); linha('-', (4*n)+3); System.out.printf("*");
     }
 
 }
